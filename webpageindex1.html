@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Web Page 1</title>
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    .header {
+      background-color: rgb(70, 61, 61);
+      height: 35px;
+      width: 100%;
+      display: flex;
+    }
+
+    .icon {
+      height: 100px;
+      width: 100px;
+      align-items: center;
+      justify-content: start;
+      display: inline;
+      position: relative;
+      object-fit: cover;
+      top: 10px;
+    }
+    .github {
+     align-items: center;
+     justify-content: center;
+     padding-top: 10px;
+     padding-left: 600px;
+     
+    }
+    .container {
+      height: 90vh;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 25vw repeat(3,25vw);
+      grid-template-rows: auto auto;
+      grid-gap: 5px;
+      background-color: gray;
+     
+    
+    }
+
+    .item1 {
+      background-color: black;
+      grid-row: 1/5;
+      margin: 20px;
+      border-radius: 10px;
+      
+    }
+
+    .item2 {
+      background-color: black;
+      grid-column: 2/5;
+      margin: 50px 80px 50px 80px;
+      border-radius: 10px;
+      height: 50px;
+    }
+    .item3 {
+      background-color:  black;
+      grid-row: 2/3;
+      margin: 25px 25px 25px 25px;
+      height: 150px;
+      border-radius: 10px;
+   
+    }
+    .item4 {
+      background-color: black;
+      grid-row: 2/3;
+      height: 150px;
+      border-radius: 10px;
+      margin: 25px 25px 25px 25px;
+    }
+    .item5 {
+      background-color: black;
+      grid-row: 2/3;
+      height: 150px;
+      border-radius: 10px;
+      margin: 25px 25px 25px 25px;
+    }
+    .item6 {
+      background-color: black;
+      grid-column: 2/5;
+      grid-row: 3/5;
+      height:150px;
+      border-radius: 10px;
+      margin: 50px 25px 25px 25px;
+ 
+      
+    }
+  </style>
+  <body>
+    <div class="header">
+      <div class="icon"><i class="fa-brands fa-github fa-2xl"></i></div>
+      <div class="github">GITHUB</div>
+    </div>
+    <div class="container">
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4"></div>
+      <div class="item5"></div>
+      <div class="item6"></div>
+    </div>
+    <!-- <div><i class="fa-brands fa-square-github fa-2xl"></i></div> -->
+  </body>
+</html>
