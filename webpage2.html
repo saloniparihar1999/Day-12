@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h6 {
+      font-weight: bold;
+      font-size: xx-large;
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      margin-top: 0px;
+      padding-top: 0px;
+    }
+
+    .container {
+      border: 1px solid black;
+      height: 75vh;
+      width: 75vw;
+      margin: 5% 12%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto; /* centers the image horizontally */
+      border-radius: 75%;
+      border: 2px solid black;
+      width: 100px;
+      height: 150px; /* maintains the image's aspect ratio */
+    }
+
+    .image_container {
+      height: 200px;
+      width: 200px;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 25px;
+    }
+
+    .details {
+      padding: 25px;
+      height: 500px;
+      width: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .label {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    .input {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+    .submit {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+    label{
+        padding: 5px;
+    }
+    input{
+        padding: 5px;
+    }
+  .emailInput{
+    margin-top: 5px;
+  }
+  .phoneInput{
+margin-top: 5px;
+  }
+  .numberInput{
+    margin-top: 5px;
+  }
+  .attendeeInput{
+    margin-top: 5px;
+  }
+  .emaillabel{
+    margin-top: 5px;
+  }
+  .phonelabel{
+    margin-top: 5px;
+  }
+  .numberlabel{
+    margin-top: 5px;
+  }
+  .attendeelabel{
+    margin-top: 5px;
+  }
+
+
+
+  </style>
+  <body>
+    <div>
+      <h6>Event 1</h6>
+      <h1>Number of seats available : 23</h1>
+    </div>
+    <div class="container">
+      <div class="image_container">
+        <img src="" alt="" />
+      </div>
+      <div class="form">
+        <div >
+          <form class="details" action="your_server_endpoint">
+            <div class="label">
+              <label class="namelabel" for="name">Name</label>
+              <label class="emaillabel" for="email">Email</label>
+              <label class="phonelabel" for="phone">Phone No</label>
+              <label  class="numberlabel" for="seats">Number of Seats</label>
+              <label class="attendeelabel" for="attendee2">Name of attendee 2</label>
+            </div>
+            <div class="input">
+              <input class="nameInput" type="text" id="name" />
+              <input class="emailInput" type="email" id="email" />
+              <input class="phoneInput" type="tel" id="phone" />
+              <input class="numberInput" type="number" id="seats" />
+              <input class="attendeeInput" type="text" id="attendee2" />
+               
+            
+          </form>
+          <div class="submit">
+          <button type="submit">Submit</button>
+          <button type="reset">Cancel</button>
+            </div>
+        </div>
+        
+      </div>
+
+       
+    </div>
+  </body>
+</html>
